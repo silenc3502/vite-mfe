@@ -5,7 +5,7 @@ import './App.css'
 
 import React, { useEffect, useRef } from 'react';
 
-import { vueSample } from 'vueViteApp/Sample';
+//import { vueSample } from 'vueViteApp/Sample';
 
 function App() {
   const vueRef = useRef(null)
@@ -14,7 +14,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    vueSample(vueRef.current);
+    //vueSample(vueRef.current);
     //solidCounterWrapper(solidRef.current)
   }, []);
 
