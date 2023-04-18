@@ -1,0 +1,19 @@
+{
+  "name": "vite-module-federation",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "vue-vite-app",
+      "react-vite-app",
+      "solid-vite-app",
+      "container"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run --parallel dev",
+    "build": "lerna run build"
+  },
+  "devDependencies": {
+    "lerna": "^6.6.1"
+  }
+}
