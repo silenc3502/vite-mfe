@@ -5,16 +5,17 @@ import './App.css'
 
 import React, { useEffect, useRef } from 'react';
 
-//import { vueSample } from 'vueViteApp/Sample';
+import VueSample from 'vueViteApp/Sample';
 
 function App() {
-  const vueRef = useRef(null)
+  //const vueRef = useRef(null)
   //const solidRef = useRef(null)
 
   const [count, setCount] = useState(0)
+  //vueComponent: () => import("vue_vite_app/Sample")
 
   useEffect(() => {
-    //vueSample(vueRef.current);
+    //mount(vueRef.current);
     //solidCounterWrapper(solidRef.current)
   }, []);
 
@@ -43,6 +44,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <VueSample/>
     </div>
   )
 }

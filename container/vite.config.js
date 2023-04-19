@@ -22,7 +22,7 @@ export default defineConfig({
     federation({
       name: 'container',
       remotes: {
-        vueViteApp: 'http://localhost:3002/remoteEntry.js'
+        vueViteApp: 'http://localhost:3002/dist/assets/remoteEntry.js'
       },
       shared: ['react']
     }),

@@ -1,9 +1,8 @@
 import { createApp } from 'vue';
-import Sample from './components/Sample.vue';
-import store from "./store";
+import App from './App.vue';
 
 const mount = (el) => {
-  const app = createApp(Sample).use(store).mount(el);;
+  const app = createApp(App).mount(el);;
 };
 
 if (process.env.NODE_ENV === 'development') {
